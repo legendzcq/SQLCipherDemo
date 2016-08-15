@@ -4,6 +4,7 @@
 //
 //  Created by 张传奇 on 16/8/15.
 //  Copyright © 2016年 张传奇. All rights reserved.
+ //https://www.zetetic.net/sqlcipher/    网址
 //
 
 #import "ViewController.h"
