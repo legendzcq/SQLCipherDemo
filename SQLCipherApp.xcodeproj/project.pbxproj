@@ -15,6 +15,7 @@
 		9F2E8F621D61695000BC67DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2E8F601D61695000BC67DB /* LaunchScreen.storyboard */; };
 		9F2E8F6D1D61695000BC67DB /* SQLCipherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8F6C1D61695000BC67DB /* SQLCipherAppTests.m */; };
 		9F2E8F781D61695000BC67DB /* SQLCipherAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8F771D61695000BC67DB /* SQLCipherAppUITests.m */; };
+		9F2E8F9A1D616B3700BC67DB /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2E8F971D616AA200BC67DB /* libsqlcipher.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9F2E8F4E1D61695000BC67DB;
 			remoteInfo = SQLCipherApp;
+		};
+		9F2E8F8E1D616AA200BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C0041981BFC382400ED2AD5;
+			remoteInfo = "SQLCipher iOS";
+		};
+		9F2E8F901D616AA200BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C0041B11BFC3B2200ED2AD5;
+			remoteInfo = "SQLCipher OSX";
+		};
+		9F2E8F921D616AA200BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C0041C31BFC3CC000ED2AD5;
+			remoteInfo = "SQLCipher tvOS";
+		};
+		9F2E8F941D616AA200BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C0041D61BFC3E2500ED2AD5;
+			remoteInfo = "SQLCipher watchOS";
+		};
+		9F2E8F961D616AA200BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		9F2E8F981D616B2D00BC67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +94,7 @@
 		9F2E8F731D61695000BC67DB /* SQLCipherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLCipherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2E8F771D61695000BC67DB /* SQLCipherAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLCipherAppUITests.m; sourceTree = "<group>"; };
 		9F2E8F791D61695000BC67DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2E8F9A1D616B3700BC67DB /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +126,7 @@
 		9F2E8F461D61695000BC67DB = {
 			isa = PBXGroup;
 			children = (
+				9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */,
 				9F2E8F511D61695000BC67DB /* SQLCipherApp */,
 				9F2E8F6B1D61695000BC67DB /* SQLCipherAppTests */,
 				9F2E8F761D61695000BC67DB /* SQLCipherAppUITests */,
@@ -140,6 +186,18 @@
 			path = SQLCipherAppUITests;
 			sourceTree = "<group>";
 		};
+		9F2E8F861D616AA200BC67DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F2E8F8F1D616AA200BC67DB /* SQLCipher.framework */,
+				9F2E8F911D616AA200BC67DB /* SQLCipher.framework */,
+				9F2E8F931D616AA200BC67DB /* SQLCipher.framework */,
+				9F2E8F951D616AA200BC67DB /* SQLCipher.framework */,
+				9F2E8F971D616AA200BC67DB /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +212,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9F2E8F991D616B2D00BC67DB /* PBXTargetDependency */,
 			);
 			name = SQLCipherApp;
 			productName = SQLCipherApp;
@@ -229,6 +288,12 @@
 			mainGroup = 9F2E8F461D61695000BC67DB;
 			productRefGroup = 9F2E8F501D61695000BC67DB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9F2E8F861D616AA200BC67DB /* Products */;
+					ProjectRef = 9F2E8F851D616AA200BC67DB /* sqlcipher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9F2E8F4E1D61695000BC67DB /* SQLCipherApp */,
@@ -237,6 +302,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9F2E8F8F1D616AA200BC67DB /* SQLCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLCipher.framework;
+			remoteRef = 9F2E8F8E1D616AA200BC67DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F2E8F911D616AA200BC67DB /* SQLCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLCipher.framework;
+			remoteRef = 9F2E8F901D616AA200BC67DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F2E8F931D616AA200BC67DB /* SQLCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLCipher.framework;
+			remoteRef = 9F2E8F921D616AA200BC67DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F2E8F951D616AA200BC67DB /* SQLCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLCipher.framework;
+			remoteRef = 9F2E8F941D616AA200BC67DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F2E8F971D616AA200BC67DB /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = 9F2E8F961D616AA200BC67DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9F2E8F4D1D61695000BC67DB /* Resources */ = {
@@ -304,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 9F2E8F4E1D61695000BC67DB /* SQLCipherApp */;
 			targetProxy = 9F2E8F741D61695000BC67DB /* PBXContainerItemProxy */;
+		};
+		9F2E8F991D616B2D00BC67DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = 9F2E8F981D616B2D00BC67DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,8 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = ../sqlcipher/src;
 				INFOPLIST_FILE = SQLCipherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.SQLCipherApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,8 +536,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = ../sqlcipher/src;
 				INFOPLIST_FILE = SQLCipherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.SQLCipherApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,6 +610,7 @@
 				9F2E8F7E1D61695000BC67DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F2E8F7F1D61695000BC67DB /* Build configuration list for PBXNativeTarget "SQLCipherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +619,7 @@
 				9F2E8F811D61695000BC67DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F2E8F821D61695000BC67DB /* Build configuration list for PBXNativeTarget "SQLCipherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +628,7 @@
 				9F2E8F841D61695000BC67DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
