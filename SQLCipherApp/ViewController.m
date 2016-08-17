@@ -30,7 +30,7 @@
     sqlite3 *db;
     if (sqlite3_open([databasePath UTF8String], &db) == SQLITE_OK) {
         const char* key = [@"abc123" UTF8String];
-//        sqlite3_key(db, key, strlen(key));
+        sqlite3_key(db, key, strlen(key));
         int result = sqlite3_exec(db, (const char*) "SELECT count(*) FROM sqlite_master;", NULL, NULL, NULL);
         if (result == SQLITE_OK) {
             NSLog(@"password is correct, or, database has been initialized");
@@ -41,6 +41,11 @@
             NSLog(@"incorrect password! errCode:%d",result);
         }
         
+      // int sqlite3_rekey( sqlite3 *db, const void *pKey, int nKey)
+      // 修改密钥或者情况密钥  只要之前进行过sqlite3_key操作后即可执行
+      // 清空密钥为 sqlite3_rekey( db, NULL, 0);
+        const char* key1 = [@"asdfsdfa" UTF8String];
+        sqlite3_rekey(db, key1, strlen(key1));
         sqlite3_close(db);
     }
 }
